@@ -31,8 +31,7 @@ public class courseTest extends BaseClass
 		home.manage();
 		 course=home.course();
 		 Reporter.log("Course Page is landed",true);
-		
-		
+			
 	}
 	
 	@Test(priority=2)
