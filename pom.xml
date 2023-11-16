@@ -12,7 +12,7 @@
         <version>3.2.1</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>XMLFiles/${xmlfiles}</suiteXmlFile>
+            <suiteXmlFile>XMLfiles/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
