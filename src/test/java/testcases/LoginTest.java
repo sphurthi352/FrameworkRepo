@@ -16,7 +16,7 @@ import com.learnautomation.pages.LoginPage;
 // Login Test Cases
 
 
-// To check Login 
+
 
 public class LoginTest extends BaseClass
 {
