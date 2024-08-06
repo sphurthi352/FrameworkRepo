@@ -13,9 +13,9 @@ import com.learnautomation.pages.HomePage;
 import com.learnautomation.pages.LoginPage;
 
 
-// Login Test Case
+// Login Test Cases
 
-=======
+
 // To check Login 
 
 public class LoginTest extends BaseClass

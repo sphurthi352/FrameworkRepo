@@ -70,6 +70,8 @@ public class categoryTest extends BaseClass
 	{
 		category.updateCategory(categoryName, appendName);	
 		Assert.assertTrue(category.newCategoryName(latestName));
+		Reporter.log("Category name is modified to "+latestName,true);
+		
 	}
 	
 	@Test(dataProvider="categoryInput1",dataProviderClass=DataProviders.class,priority=6)
@@ -77,7 +79,7 @@ public class categoryTest extends BaseClass
 	{
 		int categoryCountAfterDelete=category.deleteCategory(latestName);
 		
-		Reporter.log("delete count" +categoryCountAfterDelete,true);
+		Reporter.log("New count after category is deleted " +categoryCountAfterDelete,true);
 		
 		Assert.assertEquals(categoryCountAfterDelete, initialCategoryCount);
 		

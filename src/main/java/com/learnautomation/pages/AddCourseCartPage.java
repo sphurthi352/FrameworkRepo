@@ -22,19 +22,19 @@ public class AddCourseCartPage
 		this.driver=driver;
 	}
 	
-	By numOfCourses= By.xpath("//div[contains(@class,'course-data')]");
-	By priceValues=By.xpath("//span[contains(text(),'Price')]/b");
-	By addCart=By.xpath("//button[contains(text(),'Add to Cart')]");
-	By cartButton=By.xpath("//button[contains(@class,'cartBtn')]");
-	By numOfCousesInCart=By.xpath("//div[@class='cart-container']/div[@class='course-card row']");
+	private By numOfCourses= By.xpath("//div[contains(@class,'course-data')]");
+	private By priceValues=By.xpath("//span[contains(text(),'Price')]/b");
+	private By addCart=By.xpath("//button[contains(text(),'Add to Cart')]");
+	private By cartButton=By.xpath("//button[contains(@class,'cartBtn')]");
+	private By numOfCousesInCart=By.xpath("//div[@class='cart-container']/div[@class='course-card row']");
 	//By numOfCourseIncart=By.xpath("//span[@class='count']");
-	By enroll=By.xpath("//button[text()='Enroll Now']");
-	By TotalPrice=By.xpath("//h3[contains(text(),'Total Price:')]/b");
-	By address=By.name("address");
-	By phone=By.id("phone");
-	By enrollNow=By.xpath("(//button[text()='Enroll Now'])[2]");
-	By orderId=By.xpath("//h4[@class='uniqueId']/b");
-	By close=By.xpath("//button[@aria-label='Close']");
+	private By enroll=By.xpath("//button[text()='Enroll Now']");
+	private By TotalPrice=By.xpath("//h3[contains(text(),'Total Price:')]/b");
+	private By address=By.name("address");
+	private By phone=By.id("phone");
+	private By enrollNow=By.xpath("(//button[text()='Enroll Now'])[2]");
+	private By orderId=By.xpath("//h4[@class='uniqueId']/b");
+	private By close=By.xpath("//button[@aria-label='Close']");
 	 int courseCount;
 	
 	public int coursesCount()
@@ -51,6 +51,8 @@ public class AddCourseCartPage
 		int sumOfPrices=0;
 		
 		List<WebElement> l1=Utility.waitForWebElements(driver, priceValues);
+		//System.out.println("list size "+l1.size());
+	
 		
 		for(WebElement ele :l1)
 		{

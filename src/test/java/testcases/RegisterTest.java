@@ -26,6 +26,8 @@ public class RegisterTest extends BaseClass
 		
 		Assert.assertTrue(status,"User is Not Registered");
 		
+	
+		
 		
 	}
 

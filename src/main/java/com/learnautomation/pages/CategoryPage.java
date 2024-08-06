@@ -3,6 +3,7 @@ package com.learnautomation.pages;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.learnautomation.helper.Utility;
 
@@ -78,7 +79,11 @@ public class CategoryPage
 	
 	public void updateCategory(String categoryName,String appendName)
 	{
-		Utility.waitForWebElement(driver, By.xpath("//td[text()='"+categoryName+"']//following::button[text()='Update ']")).click();
+		WebElement ele =Utility.waitForWebElement(driver, By.xpath("//td[text()='"+categoryName+"']//following::button[normalize-space()='Update']"));
+		Utility.clickElement(driver, ele);
+		//Utility.waitForWebElement(driver, By.xpath("//td[text()='"+categoryName+"']//following::img[@alt='update']")).click();
+		
+		//td[text()='JMeter99']//following::button[normalize-space()='Update']
 		
 	Alert alert=Utility.alert(driver);
 	

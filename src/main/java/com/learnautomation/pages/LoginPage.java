@@ -6,11 +6,6 @@ import org.openqa.selenium.WebElement;
 
 import com.learnautomation.helper.Utility;
 
-
-
-
-
-
 public class LoginPage
 {
 	

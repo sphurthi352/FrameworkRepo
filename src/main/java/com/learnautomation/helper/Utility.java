@@ -29,7 +29,7 @@ public class Utility
 	public static Alert alert(WebDriver driver)
 	{
 		
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		
 		Alert alert=wait.until(ExpectedConditions.alertIsPresent());
 		
